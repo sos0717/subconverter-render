@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: subconverter
+    env: docker
+    region: oregon
+    plan: free
+    healthCheckPath: /version
+    autoDeploy: true
+    dockerfilePath: Dockerfile
